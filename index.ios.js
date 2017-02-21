@@ -1,12 +1,3 @@
-
-
-
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -29,9 +20,6 @@ const content = [
   }
 ];
 
-
-
-
 class Article extends Component {
   render() {
     const {
@@ -41,7 +29,6 @@ class Article extends Component {
       onBack
     } = this.props;
     return (
-      // Article
       <View style={styles.container}>
         <View style={styles.header}>
           <TouchableHighlight onPress={onBack}>
@@ -73,20 +60,6 @@ class Article extends Component {
           </ScrollView>
         </View>
       </View>
-      // //////////////////////////////////////
-      // <View>
-      //   <Text>Current Scene: </Text>
-      //   <TouchableHighlight onPress={this.props.onForward}>
-      //     <Text>
-      //       Next scene
-      //     </Text>
-      //   </TouchableHighlight>
-      //   <TouchableHighlight onProgress={this.props.onBack}>
-      //     <Text>
-      //       Go back
-      //     </Text>
-      //   </TouchableHighlight>
-      // </View>
     );
   }
 }
